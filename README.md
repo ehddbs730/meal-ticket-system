@@ -4,7 +4,7 @@ React 기반으로 만들어져 있습니다.</br>
 실행 전 node.js를 설치해주세요.
 
 visual studio code(다른 프로그램도 괜찮습니다.) 에서 터미널을 여시고</br>
-npm start</br>
+<b>npm start</b></br>
 라고 입력해주세요.</br>
 
 자동으로 창이 열리지 않는다면 http://localhost:3000/ 접속해주세요.</br>
