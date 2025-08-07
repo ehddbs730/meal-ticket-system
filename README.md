@@ -3,13 +3,15 @@
 React 기반으로 만들어져 있습니다.</br>
 실행 전 node.js를 설치해주세요.
 
-visual studio code(다른 프로그램도 괜찮습니다.) 에서 터미널을 여시고 packet.json이 있는 폴더 위치로 이동하신 후</br>
+visual studio code(다른 프로그램도 괜찮습니다.) 에서 터미널을 여시고 package.json이 있는 폴더 위치로 이동하신 후</br>
 
 <b>
-npm install
+npm install</br>
 npm start</br>
 </b>
 라고 입력해주세요.</br>
+(npm install 입력 시 package.json을 기반으로 필요한 패키지를 다운로드합니다. 경고는 원래 뜨는 것이니 무시하셔도 됩니다.)</br>
+npm start 이후 오류가 난다면 말해주세요.
 
 자동으로 창이 열리지 않는다면 http://localhost:3000/ 접속해주세요.</br>
 현재 UI 구현을 위해 임의의 정적인 데이터만 들어가 있습니다.</br>
