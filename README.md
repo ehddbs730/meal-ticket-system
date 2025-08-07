@@ -9,7 +9,7 @@ visual studio code(다른 프로그램도 괜찮습니다.) 에서 터미널을 
 npm install</br>
 npm start</br>
 </b>
-라고 입력해주세요.</br>
+라고 입력해주세요.
 
 주의 사항</br>
 npm install 입력 시 package.json을 기반으로 필요한 패키지를 다운로드합니다. 그러니 반드시 package.json이 있는 위치에서 입력해주세요.</br>
