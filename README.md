@@ -1,14 +1,14 @@
 # meal-ticket-system
 
-React 기반으로 만들어져 있습니다.
+React 기반으로 만들어져 있습니다.</br>
 실행 전 node.js를 설치해주세요.
 
-visual studio code(다른 프로그램도 괜찮습니다.) 에서 터미널을 여시고
-npm start
-라고 입력해주세요.
+visual studio code(다른 프로그램도 괜찮습니다.) 에서 터미널을 여시고</br>
+npm start</br>
+라고 입력해주세요.</br>
 
-자동으로 창이 열리지 않는다면 http://localhost:3000/ 접속해주세요.
-현재 UI 구현을 위해 임의의 정적인 데이터만 들어가 있습니다.
+자동으로 창이 열리지 않는다면 http://localhost:3000/ 접속해주세요.</br>
+현재 UI 구현을 위해 임의의 정적인 데이터만 들어가 있습니다.</br>
 연결 미구현 버튼들이 존재합니다.
 
 현 UI 시스템 구현된 버튼
