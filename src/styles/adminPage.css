@@ -1,0 +1,113 @@
+body, html, #root {
+  background: #fff;
+}
+
+.admin-container {
+  max-width: 1200px;
+  margin: 100px auto 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+  padding: 80px 64px 64px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-title {
+  color: #222;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.admin-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.admin-section {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  color: #222;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.restaurant-image {
+  background: #e9f0fc;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  color: #0070f3;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.admin-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.admin-btn {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.admin-btn:hover {
+  background: #005bb5;
+}
+
+@media (max-width: 900px) {
+  .admin-container {
+    max-width: 98vw;
+    padding: 40px 12vw 32px 12vw;
+  }
+  .admin-title {
+    font-size: 2.2rem;
+  }
+  .admin-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .admin-section {
+    padding: 24px;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .admin-btn {
+    font-size: 1rem;
+  }
+} 
