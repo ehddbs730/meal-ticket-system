@@ -4,7 +4,6 @@ import './styles/main.css';
 import Navbar from './components/Navbar';
 import NewLoginPage from './pages/NewLoginPage';
 import TicketPurchase from './pages/TicketPurchase';
-import MenuPage from './pages/MenuPage';
 import MenuDetailPage from './pages/MenuDetailPage';
 import PaymentPage from './pages/PaymentPage';
 import PaymentCompletePage from './pages/PaymentCompletePage';
@@ -22,7 +21,6 @@ function App() {
         <Routes>
           <Route path="/" element={<NewLoginPage />} />
           <Route path="/ticket-purchase" element={<TicketPurchase />} />
-          <Route path="/menu" element={<MenuPage />} />
           <Route path="/menu-detail" element={<MenuDetailPage />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/payment-complete" element={<PaymentCompletePage />} />
@@ -32,7 +30,6 @@ function App() {
           <Route path="/qr-code" element={<QRCodePage />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/kiosk" element={<KioskMenuPage />} />
-          <Route path="/kiosk-menu" element={<KioskMenuPage />} />
         </Routes>
       </div>
     </Router>
