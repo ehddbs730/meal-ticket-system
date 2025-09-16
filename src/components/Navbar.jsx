@@ -12,11 +12,12 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/ticket-purchase" className="navbar__site-name">Site Name</Link>
+      <Link to="/ticket-purchase" className="navbar__site-name">Yummy Pass</Link>
       <ul className="navbar__menu">
         <li><Link to="/ticket-purchase" className="navbar__menu-link">식권 구매</Link></li>
         <li><Link to="/my-ticket" className="navbar__menu-link">My 식권</Link></li>
         <li><Link to="/admin" className="navbar__menu-link">관리자 페이지</Link></li>
+        <li><Link to="/qr-code" className="navbar__menu-link">QR 처리</Link></li>
       </ul>
       <button className="navbar__logout" onClick={handleLogout}>로그아웃</button>
     </nav>

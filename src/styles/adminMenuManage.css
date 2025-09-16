@@ -1,135 +1,251 @@
-/* 전체 컨테이너 */
-.admin-menu-container {
-  max-width: 1200px;
+body, html, #root {
+  background: #f5f5f5;
+}
+
+.admin-menu-manage-container {
+  max-width: 1400px;
   margin: 60px auto 0 auto;
-  background: #fff;
-  border-radius: 24px;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-  padding: 64px 60px 60px 60px;
-  min-height: 700px;
+  padding: 40px;
+  min-height: 100vh;
 }
 
-.admin-menu-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 32px;
-  border-bottom: 2px solid #222;
-  padding-bottom: 12px;
-  position: relative;
+.admin-menu-manage-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.admin-menu-title {
-  font-size: 2.8rem;
+.admin-menu-manage-title {
+  font-size: 2.5rem;
   font-weight: 800;
-  color: #222;
-  margin: 0;
-  padding: 0;
-  line-height: 1.1;
-}
-
-.admin-menu-add-btn {
-  background: #fff;
   color: #2a4ad9;
-  font-size: 1.35rem;
-  font-weight: 700;
-  border: 2px solid #2a4ad9;
-  border-radius: 20px;
-  padding: 18px 44px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  margin-bottom: 0;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.admin-menu-add-btn:hover {
-  background: #2a4ad9;
-  color: #fff;
+  margin-bottom: 10px;
 }
 
-.admin-menu-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-  margin-top: 40px;
+.admin-menu-manage-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
 }
 
-.admin-menu-list {
+.admin-menu-manage-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* 메뉴 등록/수정 섹션 */
+.admin-menu-form-section {
   background: #e6edff;
-  border-radius: 18px;
-  padding: 40px 48px 40px 48px;
-  min-width: 260px;
-  min-height: 420px;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.admin-menu-form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2a4ad9;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.admin-menu-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  box-shadow: 0 4px 16px rgba(44,44,100,0.06);
+  gap: 20px;
 }
-.admin-menu-list-title {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #2a4ad9;
-  margin-bottom: 32px;
-  text-align: center;
-  width: 100%;
+
+.admin-menu-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.admin-menu-item {
-  font-size: 1.5rem;
-  color: #222;
-  margin-bottom: 28px;
+
+.admin-menu-form-label {
+  font-size: 1.1rem;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.admin-menu-current {
-  background: #d6e6fa;
-  border-radius: 32px;
-  padding: 16px 0;
-  width: 180px;
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 56px;
   color: #2a4ad9;
 }
-.admin-menu-empty {
-  color: #aaa;
+
+.admin-menu-form-input,
+.admin-menu-form-select {
+  padding: 12px 16px;
+  border: 2px solid #2a4ad9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.3s ease;
 }
-.admin-menu-arrow {
+
+.admin-menu-form-input:focus,
+.admin-menu-form-select:focus {
+  outline: none;
+  border-color: #1a3ac9;
+}
+
+.admin-menu-checkbox-group {
+  display: flex;
+  margin-top: 8px;
+}
+
+.admin-menu-checkbox-label {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: auto;
+  gap: 8px;
+  font-size: 1rem;
+  color: #2a4ad9;
+  cursor: pointer;
 }
-.admin-menu-arrow-btn {
-  font-size: 4rem;
+
+.admin-menu-checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #2a4ad9;
+}
+
+.admin-menu-submit-btn {
   background: #2a4ad9;
   color: #fff;
   border: none;
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-size: 1.2rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 8px rgba(44,44,100,0.08);
+  transition: all 0.3s ease;
+  margin-top: 10px;
 }
-.admin-menu-arrow-btn:hover {
-  background: #1a2a7a;
+
+.admin-menu-submit-btn:hover {
+  background: #1a3ac9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(42, 74, 217, 0.3);
+}
+
+/* 메뉴 현황 섹션 */
+.admin-menu-status-section {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.admin-menu-status-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2a4ad9;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.admin-menu-table-container {
+  overflow-x: auto;
+}
+
+.admin-menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-menu-table th {
+  background: #2a4ad9;
+  color: #fff;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.admin-menu-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.admin-menu-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.admin-menu-delete-btn {
+  background: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.admin-menu-delete-btn:hover {
+  background: #ff3742;
+}
+
+.admin-menu-back-btn {
+  background: #e6edff;
+  color: #2a4ad9;
+  border: 2px solid #2a4ad9;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.admin-menu-back-btn:hover {
+  background: #2a4ad9;
   color: #fff;
 }
-.admin-menu-item input[type="checkbox"] {
-  width: 28px;
-  height: 28px;
-  accent-color: #2a4ad9;
-  margin-right: 12px;
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .admin-menu-manage-container {
+    padding: 20px;
+  }
+  
+  .admin-menu-manage-title {
+    font-size: 2rem;
+  }
+  
+  .admin-menu-manage-subtitle {
+    font-size: 1rem;
+  }
+  
+  .admin-menu-manage-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .admin-menu-form-section,
+  .admin-menu-status-section {
+    padding: 20px;
+  }
+  
+  .admin-menu-form-title,
+  .admin-menu-status-title {
+    font-size: 1.5rem;
+  }
+  
+  .admin-menu-table {
+    font-size: 0.8rem;
+  }
+  
+  .admin-menu-table th,
+  .admin-menu-table td {
+    padding: 8px 4px;
+  }
+  
+  .admin-menu-checkbox-group {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

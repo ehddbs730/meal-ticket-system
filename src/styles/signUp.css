@@ -143,3 +143,66 @@
   background: #2a4ad9;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .signup2-layout {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    min-height: auto;
+  }
+  
+  .signup2-left {
+    width: 100%;
+    max-width: none;
+    height: 200px;
+    order: 2;
+  }
+  
+  .signup2-logo-text {
+    font-size: 2.5rem;
+  }
+  
+  .signup2-right {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    padding: 20px;
+    order: 1;
+  }
+  
+  .signup2-form {
+    max-width: none;
+  }
+  
+  .signup2-label {
+    font-size: 1.1rem;
+  }
+  
+  .signup2-input {
+    font-size: 1.3rem;
+  }
+  
+  .signup2-btn {
+    font-size: 1.3rem;
+    padding: 14px 0;
+  }
+  
+  .signup2-divider-row {
+    max-width: none;
+  }
+  
+  .signup2-divider-text {
+    font-size: 1rem;
+  }
+  
+  .signup2-socials {
+    max-width: none;
+    gap: 12px;
+  }
+  
+  .signup2-social {
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
+}
